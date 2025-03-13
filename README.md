@@ -12,25 +12,24 @@
 ```http
   git clone https://github.com/justinmeza/lci.git
 ```
-#### 2. Instalar ((WINDOWS) Python2.7+ necessário).
-
+#### 2. Instalar interpretador ((WINDOWS) Python2.7+ necessário).
+VOCE PRECISA EXECUTAR ISSO NUM CMD COMO ADMINISTRADOR. install.py ESTA DENTRO DE lci.
 ```http
-  python install install.py 
+  cd lci && python install.py 
 ```
-#### 2. Instalar (LINUX).
+#### 2. Instalar interpretador (LINUX).
 
 ```http
-  git https://github.com/criperrr/Conversor.git conversor/ &&
+  git clone https://github.com/criperrr/Conversor.git Conversor/ &&
   chmod +x install.sh && bash install.sh
 ```
 
 #### 3. Executar o código:
 ```http
-  # Se vc instalou pelo linux pode pular essa etapa de clonagem
-  git https://github.com/criperrr/Conversor.git conversor/ &&
-  cd conversor/
+  # Se vc instalou pelo linux pode pular essa etapa de clonagem. N PULA O CD 
+  git clone https://github.com/criperrr/Conversor.git && cd Conversor/LOLCode
   # No windows:
-  . ..\lci\lci.exe test.lol
+  ..\..\lci.exe test.lol
   # No linux:
   lci test.lol
 ```
