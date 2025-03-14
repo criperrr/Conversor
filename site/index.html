@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversor celcius pra Fahrenheit</title>
+    </head>
+    <body>
+        <label style="font-family: 'Trebuchet MS'; font-size: 40px;">Insira um valor em Celcius: </label>
+        <br> 
+        <div class="alinhar">
+            <input type="number"  placeholder="Celcius" id="input_cel" style="font-size: 30px;">
+            <button onclick="calcula()" class="butao" >Converter!</button>
+        </div>
+        <br>
+        <label class="resultado">O valor em Fahrenheit é: </label>
+        <label class="resultado" id="result"></label>
+    </body>
+    <style>
+        .alinhar{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        
+        }
+        .butao{
+            font-size: 20px;
+            height: 43px;
+            border: 3px solid #ff93d7e5;
+            border-radius: 10px;
+        }
+        .resultado{
+            font-size: 30px;
+            font-family: Verdana;
+        }
+    </style>
+    <script>
+        function calcula(){
+            data = document.getElementById("input_cel").value
+            document.getElementById("result").innerHTML = "" + ((data*1.8)+32) + "°F"
+        }
+    </script>
+</html>
