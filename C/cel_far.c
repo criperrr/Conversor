@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-float converterTipo(float x) { //Consitência de tipo usando o valor de retorno do scanf()
+float converterTipo(float x) { //Consistência de tipo usando o valor de retorno do scanf()
     if (scanf("%f", &x) != 1) {
         printf("- Insira um valor inteiro ou decimal: ");
         while(getchar() != '\n'); //Limpa o stdin (coisa que o fflush não consegue)
@@ -19,7 +19,7 @@ int main(){
 
     char *base = (char*) malloc(2 * (sizeof(char))); //String pra poder usar strlwr(), só se checa o [0]
     printf("- A temperatura base está em graus Celsius(C) ou Fahrenheit(F)?\n> ");
-    gets(base);
+    fgets(base, 2, stdin);
     strlwr(base);
     fflush(stdin);
     
@@ -41,8 +41,8 @@ int main(){
         
         default:
             printf("- Insira uma opção válida: ");
+            fgets(base, 2, stdin);
             fflush(stdin);
-            gets(base);
             strlwr(base);
             goto Casos;
             break;
