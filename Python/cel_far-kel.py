@@ -23,20 +23,20 @@ while base != 'c' and base != 'f' and base != 'k': # Consistência
 if base == 'c':
   tempC = input("- Insira a temperatura em graus Celsius: ")
   tempC = converterTipo(tempC)
-  tempF = (tempC * 9/5) + 32 
-  tempK = tempC + 273.15
+  tempF = (tempC * 9/5) + 32 # Celsius -> Fahrenheit
+  tempK = tempC + 273.15 # Celsius -> Kelvin
   imprimir(base)
     
 if base == 'f':
   tempF = input("- Insira a temperatura em graus Fahrenheit: ")
   tempF = converterTipo(tempF)
-  tempC = (tempF - 32) * 5/9 
-  tempK = tempC + 273.15
+  tempC = (tempF - 32) * 5/9 # Fahrenheit -> Celsius
+  tempK = tempC + 273.15 # Fahrenheit -> Kelvin (usando Celsius)
   imprimir(base)
     
 if base == 'k':
   tempK = input("- Insira a temperatura em Kelvin: ")
   tempK = converterTipo(tempK)
-  tempC = tempK - 273.15
-  tempF = (tempC * 9/5) + 32
+  tempC = tempK - 273.15 # Kelvin -> Celsius
+  tempF = (tempC * 9/5) + 32 # Kelvin -> Fahrenheit (usando Celsius)
   imprimir(base)
