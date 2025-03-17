@@ -15,11 +15,11 @@ while base != 'c' and base != 'f': # Consistência
 if base == 'c':
     tempC = input("- Insira a temperatura em graus Celsius: ")
     tempC = converterTipo(tempC)
-    tempF = (tempC * 9/5) + 32 # Temperatura em Fahrenheit
+    tempF = (tempC * 9/5) + 32 # Celsius -> Fahrenheit
+    print(f"\n- A temperatura em graus Fahrenheit é: {tempF:.2f}")
     
 else:
     tempF = input("- Insira a temperatura em graus Fahrenheit: ")
     tempF = converterTipo(tempF)
-    tempC = (tempF - 32) * 5/9 # Temperatura em Celsius
-
-print(f"\n- A temperatura em graus Fahrenheit é: {tempF:.2f}") if base == 'c' else print(f"\n- A temperatura em graus Celsius é: {tempC:.2f}")
+    tempC = (tempF - 32) * 5/9 # Fahrenheit -> Celsius
+    print(f"\n- A temperatura em graus Celsius é: {tempC:.2f}")
