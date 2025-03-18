@@ -11,11 +11,11 @@ IM IN YR LOOP BTW isso é tipo while(true):
         YA RLY BTW isso é o IF
             VISIBLE "VALOR EM FAFARENHEITE: "
             TO_CONVERT R PRODUKT OF TO_CONVERT AN 1.8 BTW to_convert*=1.8
-            VISIBLE SUM OF TO_CONVERT AN 32 print(to_convert+32)
+            VISIBLE SUM OF TO_CONVERT AN 32 BTW print(to_convert+32)
             GTFO
         MEBBE BOTH SAEM INPUT AN "2" BTW isso é o else if
             VISIBLE "VALOR EM KELVINHO: "
-            TO_CONVERT R SUM OF TO_CONVERT AN 273.15 to_convert += 273.15
+            TO_CONVERT R SUM OF TO_CONVERT AN 273.15 BTW to_convert += 273.15
             VISIBLE TO_CONVERT
             GTFO BTW isso é tipo um break
         NO WAI BTW e isso é o else
