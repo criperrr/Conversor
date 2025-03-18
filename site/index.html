@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversor celcius pra Fahrenheit</title>
+    </head>
+    <body>
+        <label  style="font-family: 'Trebuchet MS'; font-size: 40px; color: white;">Insira um valor em Celcius: </label>
+        <br> 
+        <div class="alinhar">
+            <input type="number" placeholder="Celcius" id="input_cel" style="font-size: 30px;">
+            <label class="resultado">para: </label>
+            <select name="Temperatura" onchange="calcula()" id="escolher">
+                <option value="fah">Fahrenheit</option>
+                <option value="kel">Kelvin</option>
+            </select>
+            <button onclick="calcula()" class="butao" >Converter!</button>
+        </div>
+        <br>
+        <label class="resultado">O valor em Fahrenheit é: </label>
+        <label class="resultado" id="result"></label>
+    </body>
+    <style>
+        body{
+            background-color: black;
+        }
+        .alinhar{
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        
+        }
+        .butao{
+            color: white;
+            background-color: black;
+            font-size: 20px;
+            height: 43px;
+            
+            border: 2.3px solid #ee0000e5;
+            border-radius: 10px;
+        }
+        .butao:hover{
+            background-image: url("fire-item.gif");
+        }
+        .resultado{
+
+            color: white;
+            font-size: 30px;
+            font-family: Verdana;
+        }
+    </style>
+    <script>
+        function calcula(){
+            let data = parseFloat(document.getElementById("input_cel").value);
+            let option = document.getElementById("escolher").value;
+            if(Number.isNaN(data)){
+                document.getElementById("result").innerHTML = "NaN";
+            } else{
+                if(option == "fah"){
+                    document.getElementById("result").innerHTML = ((data*1.8)+32) + "°F";
+                } else if(option == "kel"){
+                    document.getElementById("result").innerHTML = (data+273.15) + "K";
+                }
+            }
+        }
+        
+    </script>
+</html>
