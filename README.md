@@ -1,6 +1,6 @@
 
 # COMO EXECUTAR LOLCODE
-
+feito por: Gabriel C. №08 e Henrique C. №13
 
 ## Você pode: 
 - 1: Executar num compilador online, como o [JDoodle](https://www.jdoodle.com/execute-lolcode-online)
